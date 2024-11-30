@@ -1,0 +1,14 @@
+[package]
+name = "rboson"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lib]
+name = "rboson"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rboson"
+path = "src/main.rs"
