@@ -243,7 +243,7 @@ impl Grid<'_> {
 
         // Calculate the total length of the header section
         let prefix_len = 10; // Magic string (6 bytes) + version (2 bytes) + header length (2 bytes)
-        let total_header_len = prefix_len + header_bytes.len() + 1;
+        let total_header_len = prefix_len + header_bytes.len() + 1; // +1 for the newline character after padding.
 
         // Calculate padding to align to 64 bytes
         let padding_len = (64 - (total_header_len % 64)) % 64;
